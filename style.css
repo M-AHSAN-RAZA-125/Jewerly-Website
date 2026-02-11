@@ -1,0 +1,56 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --diamondcolor: #01e6ff;
+    --my-text-transform: capitalize;
+    --myblue: #4f84ff;
+}
+/* site name + menu */
+.sitename {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    margin-top: 35px;
+
+}
+
+a {
+    padding: 3px 15px 3px 15px;
+    background-color: var(--myblue);
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--diamondcolor);
+     text-transform: var(--my-text-transform);
+}
+
+h1 {
+    color: var(--myblue);
+    text-transform: var(--my-text-transform);
+}
+/* landing page */
+.landingpage{
+    margin-left: 30px;
+}
+
+.landingpage>p {
+    border: 2px solid black;
+}
+h2 {
+    color: var(--myblue);
+    text-transform: var(--my-text-transform);
+}
+
+.lp-p {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 60%;
+    font-size: smaller;
+}
+img{
+    
+}
+

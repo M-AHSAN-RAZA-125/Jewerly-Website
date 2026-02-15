@@ -11,13 +11,13 @@
 
 /* bakground image */
 body {
-    background-image: url(./images/background.jpg);
+    /* background-image: url(./images/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 10vh;
-    background-attachment: fixed;
-
+    height: 100vh;
+    background-attachment: fixed; */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.81), rgba(255, 204, 93, 1));
 }
 
 /* nav bar */
@@ -43,6 +43,11 @@ body {
     font-size: xx-large;
     font-weight: bolder;
 }
+/* .search input{
+    width: 100px ;
+    height: 15px;
+    border: #fad3ad;
+} */
 
 /* landing page */
 .landingpage {
@@ -68,15 +73,44 @@ img {
 }
 
 /* options */
-.options {}
-
 .o-img {
     display: flex;
+    gap: 10px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.o-images {
-
+.card img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card a {
+    text-transform: var(--my-text-transform);
+    border: black 1px solid;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--myblue);
+    margin-top: 20px;
+}
+.seemore{
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+}
+.seemore a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--myblue);
+    text-transform: var(--my-text-transform);
+    border: 1px solid black;
+    border-radius: 5px;
 }

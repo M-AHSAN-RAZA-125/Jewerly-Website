@@ -43,6 +43,7 @@ body {
     font-size: xx-large;
     font-weight: bolder;
 }
+
 /* .search input{
     width: 100px ;
     height: 15px;
@@ -101,16 +102,42 @@ img {
     color: var(--myblue);
     margin-top: 20px;
 }
-.seemore{
+
+.seemore {
     justify-content: center;
     margin-top: 30px;
     display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px 350px 15px 350px;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
 }
-.seemore a{
+
+.seemore a {
     text-align: center;
     text-decoration: none;
     color: var(--myblue);
     text-transform: var(--my-text-transform);
-    border: 1px solid black;
+}
+
+.seemore i {
+    padding-top: 2px;
+}
+
+/* buy section */
+.buy{
+    margin-left: 30px;
+}
+.buyimages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.buy img {
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
 }

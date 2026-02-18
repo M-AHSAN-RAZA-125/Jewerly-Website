@@ -4,20 +4,54 @@
 }
 
 :root {
-    --diamondcolor: #fad3ad;
+    --diamondcolor: rgba(255, 204, 93, 1);
     --my-text-transform: capitalize;
     --myblue: black;
 }
 
 /* bakground image */
-body {
-    /* background-image: url(./images/background.jpg);
+/* body { */
+/* background-image: url(./images/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed; */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.81), rgba(255, 204, 93, 1));
+/* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.81), rgba(255, 204, 93, 1));
+    background-size: 100%;
+    animation: bakground 2s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    0% {
+       background-position: bottom;
+    }
+
+    100% {
+        background-position: top;
+    }
+}  */
+body {
+    margin: 0;
+    height: 100vh;
+
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.81),
+            rgba(255, 204, 93, 1),
+            rgba(255, 255, 255, 0.81));
+
+    background-size: 100% 300%;
+    animation: moveBg 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
 /* nav bar */
@@ -35,6 +69,12 @@ body {
     color: var(--diamondcolor);
     text-transform: var(--my-text-transform);
     padding: 6px;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: var(--diamondcolor);
+    color: var(--myblue);
 }
 
 .name {
@@ -73,7 +113,12 @@ img {
     align-items: center;
 }
 
-/* options */
+/* varieties */
+.varieties {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .o-img {
     display: flex;
     gap: 10px;
@@ -103,9 +148,10 @@ img {
     margin-top: 20px;
 }
 
-.seemore {
+.collections {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
     border: 1px solid black;
     border-radius: 5px;
@@ -115,29 +161,68 @@ img {
     gap: 5px;
 }
 
-.seemore a {
+.collections:hover {
+    background-color: var(--diamondcolor);
+}
+
+.collections a {
     text-align: center;
     text-decoration: none;
     color: var(--myblue);
     text-transform: var(--my-text-transform);
 }
 
-.seemore i {
+.collections i {
     padding-top: 2px;
 }
 
 /* buy section */
+
 .buy{
-    margin-left: 30px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
-.buyimages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
+.buyH2{
+    margin-left: 5%;
 }
 
 .buy img {
     width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
+    object-fit:contain;
+
+}
+
+.buyCard {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.buyCard h3 {
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.buyCard p {
+    padding: 0px 5px;
+    margin: 0px 5px;
+    text-align: inherit;
+}
+
+.buyCard button {
+    cursor: pointer;
+    background-color: var(--myblue);
+    color: var(--diamondcolor);
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 20px;
 }

@@ -177,27 +177,68 @@ img {
 }
 
 /* buy section */
-
-.buy{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
+.buyNav {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
     margin-left: 5%;
-    margin-right: 5%;
-    overflow:hidden;
 
 }
-.buyH2{
+
+.backHome {
+    text-transform: capitalize;
+    padding: 5px 10p 5px 10px;
+    background-color: var(--myblue);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
     margin-left: 5%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.5s;
+    gap: 5px;
+}
+
+.buyNav a {
+    color: var(--diamondcolor);
+    text-decoration: none;
+}
+.buyNav i {
+    color: var(--diamondcolor);
+}
+
+.buyNav i:hover {
+    background-color: var(--myblue);
+}
+
+.buy {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+
+}
+
+.buyNav h2 {
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .buyCard {
     width: 200px;
-    /* height: 400px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-transform: capitalize;
+    transition: 0.5s ease;
+}
+
+.buyCard:hover{
+    transform: scale(1.1);
 }
 .buy img {
     width: 100%;
@@ -206,6 +247,9 @@ img {
     object-fit: cover;
 }
 
+/* .buy img:hover{
+    
+} */
 
 .buyCard h3 {
     margin: 0px 5px;
@@ -217,8 +261,7 @@ img {
     margin: 0px 5px;
     text-align: inherit;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+
     overflow: hidden;
 }
 
@@ -229,4 +272,32 @@ img {
     border-radius: 5px;
     padding: 5px 20px;
     margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+.buyCard button:hover {
+    background-color: var(--diamondcolor);
+    color: var(--myblue);
+}
+
+/* Contact Section */
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    padding: 10px 20px;
+    background-color: var(--myblue);
+    color: var(--diamondcolor);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.home-btn:hover {
+    background: var(--diamondcolor);
+    color: var(--myblue);
+    transform: scale(1.1);
 }

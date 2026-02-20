@@ -176,6 +176,36 @@ img {
     padding-top: 2px;
 }
 
+/* footer */
+footer {
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.81),
+            rgba(255, 204, 93, 1)),
+        color: var(--myblue);
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-box a {
+    color: var(--myblue);
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    color: var(--myblue);
+    background: none;
+}
+
 /* buy section */
 .buyNav {
     display: flex;
@@ -205,6 +235,7 @@ img {
     color: var(--diamondcolor);
     text-decoration: none;
 }
+
 .buyNav i {
     color: var(--diamondcolor);
 }
@@ -237,9 +268,10 @@ img {
     transition: 0.5s ease;
 }
 
-.buyCard:hover{
+.buyCard:hover {
     transform: scale(1.1);
 }
+
 .buy img {
     width: 100%;
     height: 200px;
@@ -283,7 +315,7 @@ img {
 /* Contact Section */
 
 .home-btn {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
 
@@ -300,4 +332,56 @@ img {
     background: var(--diamondcolor);
     color: var(--myblue);
     transform: scale(1.1);
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.con h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.con input,
+textarea,
+button {
+    background-color: var(--myblue);
+    color: var(--diamondcolor);
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+.con input::placeholder {
+    color: var(--diamondcolor);
+}
+
+.con textarea::placeholder {
+    color: var(--diamondcolor);
+}
+
+.con button {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    transition: 0.5s ease;
+}
+
+.con button:hover {
+    transform: scale(1.2);
 }

@@ -77,9 +77,9 @@ a:hover {
 
     .menu-btn {
         display: block;
-        font-size: x-large;
-        padding: 8px 30% 0px 0px;
-        margin-right: 0;
+        font-size: xx-large;
+        padding: 8px 0px 0px 0px;
+        margin-right: 10%;
     }
 }
 
@@ -109,12 +109,12 @@ img {
 
 @media (max-width:576px) {
     .landingpage h2 {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .lp-p {
         margin-right: 5%;
-        font-size: larger;
+        font-size: x-large;
         margin-right: 35%;
     }
 }
@@ -140,7 +140,7 @@ img {
 
 @media (max-width:576px) {
     .o-head h2 {
-        font-size: x-large;
+        font-size: xx-large;
         margin-left: 3%;
     }
 }
@@ -205,14 +205,14 @@ img {
     }
 
     .card img {
-        width: 60%;
+        width: 80%;
         height: auto;
-        margin-right: 30%;
+        margin-right: 15%;
     }
 
     .card a {
-        font-size: larger;
-        margin-right: 30%;
+        font-size: x-large;
+        margin-right: 15%;
         font-weight: 500;
         padding: 5px 10px;
         border-radius: 12px;
@@ -220,18 +220,18 @@ img {
 
     .collections {
         margin: 0;
-        margin-right: 35%;
         margin-left: 7%;
+        margin-right: 20%;
     }
 
     .collections a {
-        font-size: larger;
+        font-size: x-large;
         font-weight: 500;
         padding: 5px;
     }
 
     .collections i {
-        font-size: larger;
+        font-size: x-large;
         padding-top: 10px;
     }
 }
@@ -279,26 +279,26 @@ footer {
 
     .footer-box h3,
     h4 {
-        font-size: x-large;
+        font-size: xx-large;
         margin: 0;
     }
 
     .footer-box p {
-        font-size: larger;
+        font-size: x-large;
         margin: 10px 10px 0px 12%;
     }
 
     .footer-box a {
-        font-size: larger;
+        font-size: x-large;
         margin: 5px 10px 5px 12%;
     }
 
     .copyright {
-        margin: 10% 20% 5% 1%;
-        font-size: large;
+        margin: 10% 0% 5% 7%;
+        font-size: larger;
     }
     #eMail{
-        margin-right: 25%;
+        margin-right: 15%;
     }
 }
 

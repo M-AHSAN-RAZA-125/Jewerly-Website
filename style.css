@@ -68,7 +68,7 @@ a:hover {
 
 @media (max-width:576px) {
     .name {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .menu {
@@ -78,11 +78,22 @@ a:hover {
     .menu-btn {
         display: block;
         font-size: xx-large;
-        padding: 8px 0px 0px 0px;
-        margin-right: 10%;
+        padding: 8px 0px 0px 35px;
+        margin-right: 0%;
     }
 }
 
+/* tablet */
+@media only screen and (max-width:850px) {
+    .card {
+        width: 300px;
+        padding: 0;
+    }
+
+    .card img {
+        padding: 0px;
+    }
+}
 
 /* landing page */
 .landingpage {
@@ -109,12 +120,12 @@ img {
 
 @media (max-width:576px) {
     .landingpage h2 {
-        font-size: xx-large;
+        font-size: 40px;
     }
 
     .lp-p {
         margin-right: 5%;
-        font-size: x-large;
+        font-size: xx-large;
         margin-right: 35%;
     }
 }
@@ -140,7 +151,7 @@ img {
 
 @media (max-width:576px) {
     .o-head h2 {
-        font-size: xx-large;
+        font-size: 40px;
         margin-left: 3%;
     }
 }
@@ -205,34 +216,42 @@ img {
     }
 
     .card img {
-        width: 80%;
+        width: 90%;
         height: auto;
-        margin-right: 15%;
+        margin-left: 12px;
+        margin-bottom: 20px;
     }
 
     .card a {
-        font-size: x-large;
-        margin-right: 15%;
+        font-size: xx-large;
         font-weight: 500;
         padding: 5px 10px;
         border-radius: 12px;
+        margin-left: 12px;
     }
 
     .collections {
         margin: 0;
-        margin-left: 7%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 8%;
     }
 
     .collections a {
-        font-size: x-large;
+        font-size: xx-large;
         font-weight: 500;
         padding: 5px;
     }
 
     .collections i {
-        font-size: x-large;
+        font-size: xx-large;
         padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .collections{
+
+        margin: 15px 350px 15px 350px;
     }
 }
 
@@ -279,25 +298,26 @@ footer {
 
     .footer-box h3,
     h4 {
-        font-size: xx-large;
+        font-size: 40px;
         margin: 0;
     }
 
     .footer-box p {
-        font-size: x-large;
+        font-size: xx-large;
         margin: 10px 10px 0px 12%;
     }
 
     .footer-box a {
-        font-size: x-large;
+        font-size: xx-large;
         margin: 5px 10px 5px 12%;
     }
 
     .copyright {
         margin: 10% 0% 5% 7%;
-        font-size: larger;
+        font-size: x-large;
     }
-    #eMail{
+
+    #eMail {
         margin-right: 15%;
     }
 }
@@ -402,6 +422,64 @@ footer {
     color: var(--myblue);
 }
 
+@media only screen and (max-width:576px) {
+    .buyNav h2 {
+        font-size: 70px;
+        margin-left: 130px;
+    }
+
+    .buy {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .buyCard {
+        width: 500px;
+
+    }
+
+    .buy img {
+        height: 400px;
+    }
+
+    .buyCard h3 {
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .buyCard p {
+        font-size: x-large;
+    }
+
+    .buyCard button {
+        font-size: x-large;
+        padding: 10px 0px;
+        border-radius: 5px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width:850px) {
+    .buy {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .buyCard {
+        width: 220px;
+    }
+
+    .buyH2 {
+        font-size: 70em;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+}
+
 /* Contact Section */
 
 .home-btn {
@@ -475,6 +553,44 @@ button {
 
 .con button:hover {
     transform: scale(1.2);
+}
+
+@media only screen and (max-width:576px) {
+    .con {
+        width: 500px;
+        height: 700px;
+        margin: 100px 10px;
+    }
+
+    .con h1 {
+        font-size: 70px;
+    }
+
+    .con input,
+    textarea,
+    button {
+        font-size: large;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+    .con button {
+        margin-top: 30px;
+        padding: 20px 40px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        font-size: x-large;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .con button {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
 }
 
 /* cart */
